@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IG Feed Bootstrap</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+           
+            <a class="navbar-brand fab fa-instagram" href="#">    Instagram</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#foo">
+                        Create a new post
+                      </button>
+                    <li class="nav-item dropdown" >
+                        
+                        <a class="nav-link dropdown-toggle fas fa-cog" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            
+                        </a>
+                        
+                        <div class="dropdown-menu bi bi-gear-fill" aria-labelledby="navbarDropdownMenuLink">
+                           
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="fas fa-grip-horizontal nav-link" onclick="$('#grid').toggle();"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fas fa-square" onclick="$('#feed').toggle();"></a>
+        </li>
+        
+      </ul>
+    <div id = "grid" class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="container" >
+                    <img class="card-img-top" src="./img/adorable-white-little-puppy.jpg">
+                </div>
+            </div>
+       
+            <div class="col-4">
+                <div class="container" >
+                    <img class="card-img-top" src="./img/closeup-of-cute-kitten-resting-on-sofa.jpg">
+                </div>
+            </div>
+        
+            <div class="col-4">
+                <div class="container" >
+                    <img class="card-img-top" src="./img/selective-closeup-shot-of-gray-cat-head-with-blue-eyes-with-blurry-background.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="container" >
+                    <img class="card-img-top" src="./img/sun-in-the-horizon-of-the-road.jpg">
+                </div>
+            </div>
+       
+            <div class="col-4">
+                <div class="container" >
+                    <img class="card-img-top" src="./img/cute-little-dog-impersonating-business-person.jpg">
+                </div>
+            </div>
+        
+            <div class="col-4">
+                <div class="container" >
+                    <img class="card-img-top" src="./img/cat-lying.jpg">
+                </div>
+            </div>
+        </div>       
+        <div class="row">
+            <div class="col-4">
+                <div class="container" >
+                    <img class="card-img-top" src="./img/pet-accessories-still-life-concept-with-best-friend-text.jpg">
+                </div>
+            </div>
+       
+            <div class="col-4">
+                <div class="container" >
+                    <img class="card-img-top" src="./img/pet-accessories-still-life-concept-with-i-love-pets-text.jpg">
+                </div>
+            </div>
+        
+            <div class="col-4">
+                <div class="container" >
+                    <img class="card-img-top" src="./img/selective-closeup-shot-of-gray-cat-head-with-blue-eyes-with-blurry-background.jpg">
+                </div>
+            </div>
+        </div>                 
+    </div>
+
+    <div id = "feed" class="container display:none">
+        <div class="row">
+            <div class="col-2  justified-content-center">
+            </div>
+
+            <div class="col-8  justified-content-center">
+                <div class="cuerpo">
+                    <div class="post">
+                        <div class="titulo-post">
+                             <p class="titulo-foto"> <strong>Some cute thing</strong> </p>
+                             <p class="nro-foto"><strong>12/17</strong></p>   
+                         </div>
+                         <div class="foto">
+                             <img src="./img/cuteDog.png" alt="">
+             
+                         </div>
+                         <div class="texto-foto">
+                             <p>The internet approves this cute dog<strong>#BreatheCode</strong> </p>
+                         </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="col-2  justified-content-center">
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-2  justified-content-center">
+            </div>
+
+            <div class="col-8  justified-content-center">
+                <div class="cuerpo">
+                    <div class="post">
+                        <div class="titulo-post">
+                             <p class="titulo-foto"> <strong>There's a paparazzi around</strong> </p>
+                             <p class="nro-foto"><strong>12/17</strong></p>   
+                         </div>
+                         <div class="foto">
+                             <img src="./img/mujerComputadora.png" alt="">
+             
+                         </div>
+                         <div class="texto-foto">
+                             <p>This is me waiting for the screen to show my awesomw first website made at<strong>#BreatheCode</strong> </p>
+                         </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="col-2  justified-content-center">
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-2  justified-content-center">
+            </div>
+
+            <div class="col-8  justified-content-center">
+                <div class="cuerpo">
+                    <div class="post">
+                        <div class="titulo-post">
+                             <p class="titulo-foto"> <strong>And of course... food!</strong> </p>
+                             <p class="nro-foto"><strong>12/17</strong></p>   
+                         </div>
+                         <div class="foto">
+                             <img src="./img/pasta.png" alt="">
+             
+                         </div>
+                         <div class="texto-foto">
+                             <p>Because no photo feed is cool without some food on it!<strong>#BreatheCode</strong> </p>
+                         </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="col-2  justified-content-center">
+            </div>
+            
+        </div>
+    </div>
+
+
+       
+         
+         
+          
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
